@@ -1,4 +1,10 @@
 import os
+
+__author__ = """{{ cookiecutter.full_name }}"""
+__email__ = '{{ cookiecutter.email }}'
+__version__ = '{{ cookiecutter.version }}'
+
+
 BASE_DIR=os.path.dirname(os.path.abspath(__file__))
 LOGGER_CONFIG = os.path.join(os.path.dirname(BASE_DIR), 'logger.conf')
 STATIC_DIR = os.path.join(os.path.dirname(BASE_DIR), 'docs')

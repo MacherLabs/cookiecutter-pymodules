@@ -1,1 +1,5 @@
 pytest==4.3.0
+bump2version
+setuptools>=30.3.0
+wheel
+pytest-cov==2.6.1

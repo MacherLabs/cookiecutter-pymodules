@@ -7,10 +7,10 @@ README_PATH = os.path.join(APP_DIR, 'README.md')
 LICENSE_PATH = os.path.join(APP_DIR, 'LICENSE')
 REQUIREMENTS_PATH = os.path.join(APP_DIR, 'requirements.txt')
 
-print "APP_DIR: ", APP_DIR
-print "README_PATH: ", README_PATH
-print "LICENSE_PATH: ", LICENSE_PATH
-print "REQUIREMENTS_PATH: ", REQUIREMENTS_PATH
+print("APP_DIR: ", APP_DIR)
+print("README_PATH: ", README_PATH)
+print("LICENSE_PATH: ", LICENSE_PATH)
+print("REQUIREMENTS_PATH: ", REQUIREMENTS_PATH)
 
 
 with open(REQUIREMENTS_PATH) as f:
@@ -18,7 +18,7 @@ with open(REQUIREMENTS_PATH) as f:
 
 setup(
     name='{{ cookiecutter.repo_name.replace('-','_') }}',
-    version='{{ cookiecutter.version }}',  # Required
+    version='{{ cookiecutter.version }}',
     license='GPL-2.0',
     author="{{ cookiecutter.full_name }}",
     author_email="{{ cookiecutter.email }}",
@@ -31,9 +31,10 @@ setup(
     # package_data={'': ['LICENSE', 'logger.conf']},
     include_package_data=True,
     install_requires=required,
+    scripts=glob.glob('bin/*'),
     classifiers=[
         "Development Status :: 4 - Beta",
-        "Framework :: Flask",
+        "Framework :: Vedalabs-pymodules",
         "License :: Other/Proprietary License",
         "Programming Language :: Python :: 2.7",
         "Operating System :: POSIX",

@@ -31,3 +31,9 @@ cookiecutter cookiecutter-pymodules
 
 ## Contributing
 Want a new feature or find a bug? Submit a Pull Request!
+
+## TODO
+- Add Makefile for
+    - tox, flake8 and pytest tests
+    - version upgrades, git tags and push changes to pypi
+- gitlab ci files.
