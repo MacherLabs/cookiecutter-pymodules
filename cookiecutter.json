@@ -1,5 +1,6 @@
 {
     "project_name": "",
+    "project_type":["lib",""],
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}-{{ cookiecutter.project_type.lower().replace(' ', '-').replace('_', '-') }}",
     "project_short_description": "{{ cookiecutter.repo_name.replace('-', ' ') }} for VedaLabs.",
     "version": "0.1.0",
