@@ -1,19 +1,16 @@
 {
-    "project_type": ["behaviour", "apiserver", "frontend", "helmchart", "ingress", "calculator", "other"],
+   # "project_type": ["behaviour", "apiserver", "frontend", "helmchart", "ingress", "calculator", "other"],
     "project_name": "",
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}-{{ cookiecutter.project_type.lower().replace(' ', '-').replace('_', '-') }}",
     "project_short_description": "{{ cookiecutter.repo_name.replace('-', ' ') }} for VedaLabs.",
     "version": "0.1.0",
 
-    "framework": ["python-flask", "node.js", "other"],
-    "use_alipine_base": ["n", "y"],
-    "port": "8000",
-    "host_name": "api.vedalabs.in",
+  #  "use_alipine_base": ["n", "y"],
     
-    "version_control": ["bitbucket"],
-    "git_username": "ashutoshdtu",
-    "full_name": "Ashutosh Mishra",
-    "email": "ashutosh@vedalabs.in",
+    "version_control": ["gitlab"],
+    "git_username": "",
+    "full_name": "",
+    "email": "@vedalabs.in",
     "git_organization": "macherlabs",
     
     "organization_name": "VedaLabs",
@@ -21,6 +18,6 @@
     
     "docker_registry": "macherlabs.azurecr.io",
     
-    "build_system": ["drone"],
-    "build_system_url": "https://drone.vedalabs.in"
+    "build_system": ["gitlab"],
+    "build_system_url": ""
 }
