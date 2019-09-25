@@ -1,12 +1,9 @@
 {
-   # "project_type": ["behaviour", "apiserver", "frontend", "helmchart", "ingress", "calculator", "other"],
     "project_name": "",
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}-{{ cookiecutter.project_type.lower().replace(' ', '-').replace('_', '-') }}",
     "project_short_description": "{{ cookiecutter.repo_name.replace('-', ' ') }} for VedaLabs.",
     "version": "0.1.0",
-
-  #  "use_alipine_base": ["n", "y"],
-    
+   
     "version_control": ["gitlab"],
     "git_username": "",
     "full_name": "",
